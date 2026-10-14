@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Delivery Dominante: consultoria estratégica para restaurantes que querem vender mais no delivery.">
+<title>Delivery Dominante | Seu delivery pode vender mais</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--red:#ed171f;--dark:#171a20;--muted:#667085;--light:#f5f6f8;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{font-family:Inter,Arial,sans-serif;color:var(--dark);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,92%);margin:auto}
+header{height:76px;display:flex;align-items:center;background:#fff;border-bottom:1px solid #e9eaee;position:sticky;top:0;z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-weight:900;font-size:19px;line-height:1.05;letter-spacing:-.8px;display:flex;align-items:center;gap:9px}
+.crown{color:var(--red);font-size:33px}
+.logo span:last-child{display:block}
+.logo small{font-size:10px;letter-spacing:2px;color:var(--red);display:block}
+.links{display:flex;align-items:center;gap:24px;font-size:12px;font-weight:700}
+.links a:hover{color:var(--red)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 21px;background:var(--red);color:white;border-radius:9px;font-weight:800;font-size:12px;transition:.2s;border:1px solid var(--red)}
+.btn:hover{background:#c90f17;transform:translateY(-2px)}
+.btn-outline{background:transparent;color:var(--red)}
+.btn-outline:hover{color:#fff}
+.hero{padding:64px 0 58px;background:linear-gradient(110deg,#fff 0%,#fff 48%,#f7f1ee 100%);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1fr 1.08fr;align-items:center;gap:34px}
+.eyebrow{font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--red);display:flex;gap:10px;align-items:center}
+.eyebrow:before{content:"";width:30px;height:3px;background:var(--red);display:inline-block}
+h1,h2,h3{font-family:"Barlow Condensed",Impact,sans-serif;line-height:1.02;text-transform:uppercase}
+h1{font-size:clamp(44px,5.4vw,72px);margin:17px 0}
+h1 span,h2 span{color:var(--red)}
+.hero p{color:#4d5562;max-width:490px;font-size:16px}
+.hero .btn{margin-top:24px}
+.hero-note{font-size:11px!important;color:#89909a!important;margin-top:12px}
+.food-hero{height:380px;position:relative;border-radius:22px;overflow:hidden;background:#28201b}
+.food-hero img{width:100%;height:100%;object-fit:cover;display:block}
+.food-label{position:absolute;bottom:18px;left:18px;right:18px;padding:14px 17px;border-radius:12px;background:#ffffffed;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.food-label strong{font-size:13px}
+.food-label span{font-size:11px;color:var(--red);font-weight:800}
+.trust{padding:18px 0;border-top:1px solid #eceef1;border-bottom:1px solid #eceef1}
+.trust-row{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:#525966;font-size:12px;font-weight:700}
+.trust-row span:before{content:"✓";color:var(--red);font-weight:900;margin-right:8px}
+section{padding:72px 0}
+.section-head{max-width:620px;margin-bottom:30px}
+h2{font-size:clamp(34px,4vw,48px);margin:12px 0}
+.section-head p,.intro{font-size:14px;color:var(--muted)}
+.services{background:var(--light)}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.service{background:white;border:1px solid #e8eaf0;border-radius:15px;padding:25px 23px;box-shadow:0 6px 22px #10182808}
+.service-icon{width:43px;height:43px;border-radius:12px;background:#fff0f0;color:var(--red);display:grid;place-items:center;font-size:23px;margin-bottom:17px}
+.service h3{font-size:22px;margin-bottom:9px}
+.service p{font-size:13px;color:var(--muted)}
+.results{background:var(--dark);color:white;position:relative;overflow:hidden}
+.results .section-head p{color:#c5c9d0}
+.result-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.result{border:1px solid #454952;background:#22262e;border-radius:13px;padding:20px}
+.result strong{display:block;font-family:"Barlow Condensed",sans-serif;font-size:25px;color:#ff4148}
+.result span{font-size:11px;color:#e3e5e8}
+.results-note{font-size:11px;color:#c5c9d0;margin-top:16px}
+.foods{background:white}
+.food-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}
+.food-card{border:1px solid #e8eaf0;border-radius:15px;overflow:hidden;background:#fff;box-shadow:0 7px 22px #10182808}
+.food-card img{width:100%;height:170px;object-fit:cover;display:block}
+.food-card div{padding:16px}
+.food-card h3{font-size:22px;margin-bottom:5px}
+.food-card p{font-size:12px;color:var(--muted)}
+.process{background:#f5f6f8}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.step{border-top:3px solid var(--red);padding-top:17px}
+.step b{color:var(--red);font-size:12px}
+.step h3{font-size:23px;margin:8px 0}
+.step p{font-size:12px;color:var(--muted)}
+.contact{background:linear-gradient(120deg,#c90f17,#f3262e);color:white;padding:54px 0}
+.contact-row{display:flex;justify-content:space-between;align-items:center;gap:24px}
+.contact h2{font-size:clamp(33px,4vw,46px);max-width:620px}
+.contact p{font-size:14px;opacity:.9;margin-top:10px}
+.contact .btn{background:white;color:var(--red);border-color:white;white-space:nowrap}
+footer{background:#15171c;color:#fff;padding:34px 0}
+.footer-row{display:flex;justify-content:space-between;align-items:center;gap:22px;flex-wrap:wrap}
+footer p,footer a{font-size:11px;color:#c8cbd1}
+footer .logo{margin-bottom:10px}
+footer .links{flex-wrap:wrap}
+.mobile-cta{display:none}
+@media(max-width:850px){
+ .links{gap:12px}.links a:not(.btn){display:none}
+ .hero-grid{grid-template-columns:1fr}.hero{padding:43px 0}
+ .food-hero{height:310px}.service-grid{grid-template-columns:repeat(2,1fr)}
+ .result-grid{grid-template-columns:repeat(2,1fr)}
+ .food-grid{grid-template-columns:repeat(2,1fr)}
+ .steps{grid-template-columns:repeat(2,1fr)}
+ .contact-row{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:480px){
+ header{height:65px}.logo{font-size:16px}.crown{font-size:28px}
+ .nav>.btn{padding:10px 12px;font-size:10px}
+ section{padding:52px 0}.hero h1{font-size:48px}.hero p{font-size:14px}
+ .food-hero{height:245px}.service-grid{grid-template-columns:1fr}
+ .food-grid{gap:10px}.food-card img{height:125px}.food-card div{padding:12px}
+ .food-card h3{font-size:19px}.steps{gap:15px}
+ .trust-row{font-size:11px}
+ .mobile-cta{display:block;position:fixed;bottom:12px;left:12px;right:12px;z-index:9;text-align:center;box-shadow:0 4px 18px #0003}
+ body{padding-bottom:65px}
+}
+</style>
+</head>
+<body>
+<header>
+ <div class="container nav">
+  <a class="logo" href="#inicio"><span class="crown">♛</span><span>DELIVERY<small>DOMINANTE</small></span></a>
+  <nav class="links">
+   <a href="#inicio">Início</a><a href="#servicos">Serviços</a><a href="#resultados">Resultados</a><a href="#especialidades">Especialidades</a>
+  </nav>
+  <a class="btn" href="https://wa.me/5531998162633?text=Ol%C3%A1%2C%20quero%20conhecer%20a%20consultoria%20da%20Delivery%20Dominante.">Fale conosco ↗</a>
+ </div>
+</header>
+<main>
+<section class="hero" id="inicio">
+ <div class="container hero-grid">
+  <div>
+   <div class="eyebrow">Consultoria especializada em delivery</div>
+   <h1>Seu delivery<br><span>pode vender mais.</span></h1>
+   <p>Estratégia, gestão e acompanhamento para transformar seu delivery em uma operação mais forte, organizada e lucrativa.</p>
+   <a class="btn" href="https://wa.me/5531998162633?text=Ol%C3%A1%2C%20quero%20uma%20an%C3%A1lise%20do%20meu%20delivery.">Quero avaliar meu delivery →</a>
+   <p class="hero-note">Atendimento direto pelo WhatsApp. Vamos conversar sobre sua operação.</p>
+  </div>
+  <div class="food-hero">
+   <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1100&q=85" alt="Hambúrguer artesanal com ingredientes frescos">
+   <div class="food-label"><strong>Mais estratégia. Mais oportunidades.</strong><span>DELIVERY DOMINANTE ♛</span></div>
+  </div>
+ </div>
+</section>
+<div class="trust"><div class="container trust-row"><span>Estratégia para delivery</span><span>Engenharia de cardápio</span><span>Gestão de aplicativos</span><span>Acompanhamento próximo</span></div></div>
+<section class="services" id="servicos">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">Como podemos ajudar</div><h2>Soluções completas para o <span>seu delivery</span></h2><p>Estratégias personalizadas para melhorar a apresentação da sua loja, a experiência do cliente e o desempenho da operação.</p></div>
+  <div class="service-grid">
+   <article class="service"><div class="service-icon">↗</div><h3>Consultoria estratégica</h3><p>Analisamos sua operação e identificamos oportunidades para construir um plano de ação personalizado.</p></article>
+   <article class="service"><div class="service-icon">▣</div><h3>Gestão de aplicativos</h3><p>Estratégias de posicionamento, promoções e organização para iFood, 99Food e outros canais.</p></article>
+   <article class="service"><div class="service-icon">▤</div><h3>Engenharia de cardápio</h3><p>Descrições, fotos, combos e organização de produtos para facilitar a escolha e destacar seus diferenciais.</p></article>
+   <article class="service"><div class="service-icon">◎</div><h3>Tráfego pago</h3><p>Campanhas planejadas para alcançar clientes em potencial e apoiar os objetivos do negócio.</p></article>
+   <article class="service"><div class="service-icon">◷</div><h3>Plano de ação</h3><p>Orientação prática com prioridades claras para melhorar processos e aproveitar oportunidades.</p></article>
+   <article class="service"><div class="service-icon">⌁</div><h3>Análise de desempenho</h3><p>Acompanhamento de pedidos, faturamento, ticket médio e indicadores importantes para a operação.</p></article>
+  </div>
+ </div>
+</section>
+<section class="results" id="resultados">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">Gestão baseada em dados</div><h2>Decisões melhores. <span>Estratégias mais fortes.</span></h2><p>Usamos os indicadores da operação para identificar oportunidades, acompanhar mudanças e orientar os próximos passos.</p></div>
+  <div class="result-grid">
+   <div class="result"><strong>Pedidos</strong><span>Acompanhe o volume de vendas</span></div>
+   <div class="result"><strong>Faturamento</strong><span>Observe a evolução da receita</span></div>
+   <div class="result"><strong>Ticket médio</strong><span>Entenda o valor médio por pedido</span></div>
+   <div class="result"><strong>Conversão</strong><span>Identifique oportunidades no cardápio</span></div>
+  </div>
+  <p class="results-note">Cada operação tem sua realidade. As estratégias e os resultados dependem do cenário e da execução de cada negócio.</p>
+ </div>
+</section>
+<section class="foods" id="especialidades">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">Conhecemos o universo da gastronomia</div><h2>Do seu cardápio ao <span>próximo nível.</span></h2><p>Estratégias adaptadas à realidade de diferentes tipos de delivery, respeitando a identidade de cada negócio.</p></div>
+  <div class="food-grid">
+   <article class="food-card"><img loading="lazy" src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=700&q=80" alt="Hambúrguer artesanal"><div><h3>Hamburguerias</h3><p>Combos, apresentação e diferenciação.</p></div></article>
+   <article class="food-card"><img loading="lazy" src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=80" alt="Pizza artesanal"><div><h3>Pizzarias</h3><p>Cardápio, sabores e oportunidades de venda.</p></div></article>
+   <article class="food-card"><img loading="lazy" src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=80" alt="Refeição preparada com ingredientes frescos"><div><h3>Marmitarias</h3><p>Organização, clareza e praticidade.</p></div></article>
+   <article class="food-card"><img loading="lazy" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=80" alt="Prato colorido com vegetais frescos"><div><h3>Outros segmentos</h3><p>Estratégia alinhada ao seu público.</p></div></article>
+  </div>
+ </div>
+</section>
+<section class="process">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">Nosso processo</div><h2>Do diagnóstico à <span>ação.</span></h2><p>Um caminho organizado para entender sua operação e trabalhar nas oportunidades prioritárias.</p></div>
+  <div class="steps">
+   <article class="step"><b>ETAPA 01</b><h3>Diagnóstico</h3><p>Conhecemos o cenário atual e os desafios do seu delivery.</p></article>
+   <article class="step"><b>ETAPA 02</b><h3>Planejamento</h3><p>Definimos prioridades e ações adequadas à sua realidade.</p></article>
+   <article class="step"><b>ETAPA 03</b><h3>Implementação</h3><p>Organizamos as ações e orientamos sua execução.</p></article>
+   <article class="step"><b>ETAPA 04</b><h3>Acompanhamento</h3><p>Avaliamos os indicadores e ajustamos as estratégias.</p></article>
+  </div>
+ </div>
+</section>
+<section class="contact">
+ <div class="container contact-row"><div><h2>Seu delivery está pronto para evoluir?</h2><p>Converse com a Delivery Dominante e descubra quais oportunidades fazem sentido para sua operação.</p></div><a class="btn" href="https://wa.me/5531998162633?text=Ol%C3%A1%2C%20quero%20conversar%20sobre%20a%20consultoria%20para%20meu%20delivery.">Falar com um especialista →</a></div>
+</section>
+</main>
+<footer>
+ <div class="container footer-row">
+  <div><a class="logo" href="#inicio"><span class="crown">♛</span><span>DELIVERY<small>DOMINANTE</small></span></a><p>Consultoria, gestão e estratégia para o seu delivery.</p></div>
+  <nav class="links"><a href="#inicio">Início</a><a href="#servicos">Serviços</a><a href="#resultados">Resultados</a><a href="#especialidades">Segmentos</a></nav>
+  <div><p>Contato comercial</p><a href="https://wa.me/5531998162633">WhatsApp: (31) 99816-2633</a><p>Instagram: @Delivery_dominante_</p></div>
+ </div>
+</footer>
+<a class="btn mobile-cta" href="https://wa.me/5531998162633?text=Ol%C3%A1%2C%20quero%20conhecer%20a%20Delivery%20Dominante.">Fale conosco pelo WhatsApp</a>
+</body>
+</html>
