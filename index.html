@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ed171f">
   <meta name="description" content="Delivery Dominante: consultoria estratégica, gestão e otimização para negócios de delivery.">
-  <title>Delivery Dominante | Estratégia para seu delivery</title>
+  <title>Delivery Dominante | Consultoria estratégica para delivery</title>
+  <meta property="og:title" content="Delivery Dominante | Consultoria estratégica para delivery">
+  <meta property="og:description" content="Estratégia, gestão e acompanhamento para melhorar o desempenho do seu delivery.">
+  <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -86,6 +89,31 @@
     .copyright{font-size:11px;color:#aeb4be;margin-top:20px;border-top:1px solid #343840;padding-top:18px}
     .float-whatsapp{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:#20bf64;color:#fff;display:grid;place-items:center;z-index:50;box-shadow:0 7px 22px rgba(0,0,0,.2)}
     .float-whatsapp svg{width:29px;height:29px;fill:currentColor}
+
+    .plans{background:var(--soft)}
+    .plans-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
+    .plan-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px;display:flex;flex-direction:column;position:relative}
+    .plan-card.featured{border:2px solid var(--red);box-shadow:0 14px 35px rgba(237,23,31,.09)}
+    .plan-tag{font-size:10px;font-weight:900;letter-spacing:1px;color:var(--red);text-transform:uppercase;margin-bottom:12px}
+    .plan-card h3{font-size:22px;margin-bottom:8px}
+    .plan-price{font-family:"Barlow Condensed",Impact,sans-serif;font-size:43px;font-weight:900;line-height:1.1;margin:10px 0 4px}
+    .plan-period{font-size:12px;color:var(--muted);margin-bottom:18px}
+    .plan-card ul{list-style:none;margin:0 0 24px;flex:1}
+    .plan-card li{font-size:13px;color:#454b55;padding:8px 0;border-bottom:1px solid #f0f1f3}
+    .plan-card li:before{content:"✓";color:var(--red);font-weight:900;margin-right:8px}
+    .plan-card .btn{width:100%;text-align:center}
+    .plan-note{font-size:12px;color:var(--muted);text-align:center;margin-top:20px}
+    .proof{background:#fff}
+    .proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .proof-card{border:1px solid var(--line);border-radius:14px;padding:24px;background:#fff}
+    .proof-card .mark{color:var(--red);font-size:26px;font-weight:900;margin-bottom:12px}
+    .proof-card h3{font-size:17px;margin-bottom:8px}
+    .proof-card p{font-size:13px;color:var(--muted)}
+    .social-floats{position:fixed;right:20px;bottom:88px;display:grid;gap:10px;z-index:49}
+    .float-instagram{width:48px;height:48px;border-radius:50%;background:#c13584;color:#fff;display:grid;place-items:center;box-shadow:0 7px 22px rgba(0,0,0,.2);font-weight:900;font-size:23px}
+    @media(max-width:900px){.plans-grid,.proof-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:650px){.plans-grid,.proof-grid{grid-template-columns:1fr}.plan-card{padding:23px}.social-floats{right:16px;bottom:82px}.float-instagram{width:44px;height:44px}}
+
     @media(max-width:900px){.links{gap:12px}.hero-grid{gap:24px}.niche-grid{grid-template-columns:repeat(2,1fr)}.service-grid{grid-template-columns:1fr 1fr}}
     @media(max-width:650px){header{height:auto;min-height:70px;padding:10px 0}.nav{flex-wrap:wrap}.brand img{width:42px;height:42px}.brand-name{font-size:15px}.links{order:3;width:100%;overflow-x:auto;padding:8px 0 3px;justify-content:flex-start}.links a{white-space:nowrap}.nav>.btn{padding:10px 12px;font-size:11px}.hero{padding:48px 0}.hero-grid{grid-template-columns:1fr}.hero-photo{min-height:260px;grid-row:1}.hero-photo img{max-height:300px}.hero p{font-size:14px}section{padding:54px 0}.service-grid,.steps{grid-template-columns:1fr}.niche-grid{gap:12px}.niche-card img{height:130px}.niche-card h3{font-size:13px;padding:12px}.cta-grid{align-items:flex-start;flex-direction:column}.dashboard-frame{padding:8px}.footer-row{align-items:flex-start;flex-direction:column}}
   </style>
@@ -98,7 +126,7 @@
       <span class="brand-name">DELIVERY DOMINANTE<small>ESTRATÉGIA • GESTÃO • RESULTADO</small></span>
     </a>
     <nav class="links" aria-label="Navegação principal">
-      <a href="#servicos">SERVIÇOS</a><a href="#nichos">SEGMENTOS</a><a href="#case">CASE REAL</a><a href="#processo">COMO FUNCIONA</a>
+      <a href="#servicos">SERVIÇOS</a><a href="#nichos">SEGMENTOS</a><a href="#case">CASE REAL</a><a href="#planos">PLANOS</a><a href="#processo">COMO FUNCIONA</a>
     </nav>
     <a class="btn" href="https://wa.me/5531990033819?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20a%20consultoria." target="_blank" rel="noopener">FALAR COM ESPECIALISTA</a>
   </div>
@@ -145,16 +173,16 @@
   <section class="niches" id="nichos">
     <div class="container">
       <div class="section-head">
-        <div class="eyebrow">Especialistas em delivery</div>
+        <div class="eyebrow">Conhecemos o universo da gastronomia</div>
         <h2>TEMOS A ESTRATÉGIA PARA <span>TODO TIPO DE OPERAÇÃO.</span></h2>
         <p>Estratégias adaptadas à realidade do seu negócio, do cardápio à performance de vendas.</p>
       </div>
       <div class="niche-grid">
         <article class="niche-card"><img src="burguer-artesanal.jpg" alt="Hambúrguer artesanal" loading="lazy"><h3>Hamburgueria</h3></article>
         <article class="niche-card"><img src="pizza-premium.jpg" alt="Pizza premium" loading="lazy"><h3>Pizzaria</h3></article>
-        <article class="niche-card"><img src="açaí.jpg" alt="Açaí" loading="lazy" onerror="this.onerror=null;this.src='acai.jpg'"><h3>Açaíteria</h3></article>
+        <article class="niche-card"><img src="acai.jpg" alt="Açaí" loading="lazy"><h3>Açaíteria</h3></article>
         <article class="niche-card"><img src="frango-no-balde.jpg" alt="Frango no balde" loading="lazy"><h3>Frango no balde</h3></article>
-        <article class="niche-card"><img src="cachorro-quente.png" alt="Cachorro-quente" loading="lazy"><h3>Hot dog</h3></article>
+        <article class="niche-card"><img src="hot-dog.png" alt="Cachorro-quente" loading="lazy"><h3>Hot dog</h3></article>
         <article class="niche-card"><img src="marmita-tradicional.jpg" alt="Marmita tradicional" loading="lazy"><h3>Marmitaria tradicional</h3></article>
         <article class="niche-card"><img src="marmita-fit.jpg" alt="Marmita fit" loading="lazy"><h3>Comida fit</h3></article>
         <article class="niche-card"><img src="sushi-poke.jpg" alt="Sushi e poke" loading="lazy"><h3>Sushi / Poke</h3></article>
@@ -173,6 +201,48 @@
         <img src="dashboard-vendas-hamburgueria-pizzaria (1).png" alt="Dashboard de vendas de uma hamburgueria e pizzaria durante o acompanhamento de 90 dias" loading="lazy">
       </div>
       <p class="case-note">Resultados de uma operação específica. O desempenho pode variar conforme o negócio, a região, a oferta e a execução das estratégias.</p>
+    </div>
+  </section>
+
+
+  <section class="plans" id="planos">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Escolha o próximo passo</div>
+        <h2>PLANOS PARA <span>EVOLUIR.</span></h2>
+        <p>Consultoria estratégica para organizar prioridades, melhorar a operação e acompanhar a evolução do seu delivery.</p>
+      </div>
+      <div class="plans-grid">
+        <article class="plan-card">
+          <div class="plan-tag">Plano essencial</div><h3>3 meses</h3><div class="plan-price">R$ 3.000</div><div class="plan-period">Período de consultoria: 90 dias</div>
+          <ul><li>Diagnóstico da operação</li><li>Plano de ação estratégico</li><li>Orientação para cardápio e ofertas</li><li>Acompanhamento de indicadores</li></ul>
+          <a class="btn btn-light" href="https://wa.me/5531990033819?text=Ol%C3%A1%2C%20quero%20conhecer%20o%20plano%20de%203%20meses." target="_blank" rel="noopener">TENHO INTERESSE</a>
+        </article>
+        <article class="plan-card featured">
+          <div class="plan-tag">Plano recomendado</div><h3>6 meses</h3><div class="plan-price">R$ 5.000</div><div class="plan-period">Acompanhamento de médio prazo</div>
+          <ul><li>Diagnóstico e plano de ação</li><li>Estratégia de cardápio e promoções</li><li>Análise de indicadores</li><li>Ajustes estratégicos ao longo do período</li></ul>
+          <a class="btn" href="https://wa.me/5531990033819?text=Ol%C3%A1%2C%20quero%20conhecer%20o%20plano%20de%206%20meses." target="_blank" rel="noopener">TENHO INTERESSE</a>
+        </article>
+        <article class="plan-card">
+          <div class="plan-tag">Plano de crescimento</div><h3>12 meses</h3><div class="plan-price">R$ 8.000</div><div class="plan-period">Estratégia e acompanhamento de longo prazo</div>
+          <ul><li>Planejamento estratégico contínuo</li><li>Revisão de metas e indicadores</li><li>Orientação para campanhas e ofertas</li><li>Acompanhamento da evolução operacional</li></ul>
+          <a class="btn btn-light" href="https://wa.me/5531990033819?text=Ol%C3%A1%2C%20quero%20conhecer%20o%20plano%20de%2012%20meses." target="_blank" rel="noopener">TENHO INTERESSE</a>
+        </article>
+      </div>
+      <p class="plan-note">Condições de parcelamento e desconto para pagamento à vista são informadas no atendimento. Os resultados dependem da realidade e da execução de cada operação.</p>
+    </div>
+  </section>
+  <section class="proof" id="diferenciais">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Nosso compromisso</div><h2>ESTRATÉGIA COM <span>ACOMPANHAMENTO.</span></h2>
+        <p>Uma parceria orientada por dados, prioridades claras e ações compatíveis com a realidade do seu negócio.</p>
+      </div>
+      <div class="proof-grid">
+        <article class="proof-card"><div class="mark">01</div><h3>Decisões com contexto</h3><p>Analisamos os números da sua operação antes de recomendar ações, sem promessas genéricas de resultado.</p></article>
+        <article class="proof-card"><div class="mark">02</div><h3>Plano personalizado</h3><p>As prioridades são definidas conforme o momento do negócio, o cardápio, a região e os objetivos.</p></article>
+        <article class="proof-card"><div class="mark">03</div><h3>Melhoria contínua</h3><p>Acompanhamos os indicadores e ajustamos o direcionamento conforme os dados e a execução.</p></article>
+      </div>
     </div>
   </section>
 
@@ -213,6 +283,7 @@
   </div>
 </footer>
 
+<div class="social-floats"><a class="float-instagram" href="https://www.instagram.com/delivery_dominante_/" target="_blank" rel="noopener" aria-label="Acessar Instagram da Delivery Dominante">◎</a></div>
 <a class="float-whatsapp" href="https://wa.me/5531990033819?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Delivery%20Dominante." target="_blank" rel="noopener" aria-label="Falar com a Delivery Dominante pelo WhatsApp">
   <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 .8A15.1 15.1 0 0 0 3.1 23.8L1 31l7.4-1.9A15.2 15.2 0 1 0 16 .8zm0 27.5c-2.3 0-4.5-.6-6.4-1.8l-.5-.3-4.4 1.1 1.2-4.3-.3-.5A12.3 12.3 0 1 1 16 28.3zm6.8-9.2c-.4-.2-2.1-1-2.5-1.1-.3-.1-.6-.2-.8.2-.2.4-1 1.1-1.2 1.3-.2.2-.4.3-.8.1-.4-.2-1.5-.6-2.9-1.8-1.1-1-1.8-2.1-2-2.5-.2-.4 0-.6.2-.8l.6-.7c.2-.2.2-.4.4-.6.1-.3.1-.5 0-.7-.1-.2-.8-1.9-1.1-2.6-.3-.7-.6-.6-.8-.6h-.7c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.3 3.6 1.5 3.8c.2.3 2.6 4 6.3 5.6.9.4 1.6.6 2.1.7.9.3 1.7.2 2.3.1.7-.1 2.1-.9 2.4-1.8.3-.9.3-1.6.2-1.8-.1-.1-.3-.2-.7-.4z"/></svg>
 </a>
