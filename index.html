@@ -88,8 +88,8 @@ h2{font-size:clamp(34px,4vw,48px);margin:12px 0}
 .testimonials .section-head p{color:#c9cdd4}
 .review-disclaimer{font-size:11px;color:#ffd6a0;background:#3a3022;border:1px solid #6b5230;border-radius:10px;padding:12px 14px;margin:0 0 18px}
 .review-window{overflow:hidden}
-.review-track{display:flex;gap:16px;transition:transform .55s ease;will-change:transform}
-.review-card{flex:0 0 calc((100% - 32px)/3);min-height:235px;border:1px solid #383d46;background:#292d35;border-radius:18px;padding:24px;display:flex;flex-direction:column}
+.review-track{display:flex;gap:22px;transition:transform .55s ease;will-change:transform}
+.review-card{flex:0 0 calc((100% - 44px)/3);min-height:235px;border:1px solid #383d46;background:#292d35;border-radius:18px;padding:24px;display:flex;flex-direction:column}
 .review-food{width:100%;height:115px;object-fit:cover;border-radius:11px;margin-bottom:14px}
 .review-title{font:800 14px Inter,Arial,sans-serif;text-transform:none;line-height:1.35;margin:0 0 8px;color:#fff}
 .review-card .review-author{font-size:11px;color:#ffd5cc}
@@ -138,7 +138,7 @@ footer .links{flex-wrap:wrap}
  .food-hero{height:310px}.service-grid{grid-template-columns:repeat(2,1fr)}
  .result-grid{grid-template-columns:repeat(2,1fr)}.food-grid{grid-template-columns:repeat(2,1fr)}
  .steps{grid-template-columns:repeat(2,1fr)}.contact-row{align-items:flex-start;flex-direction:column}
- .faq-grid{grid-template-columns:1fr;gap:20px}.review-card{flex-basis:calc((100% - 16px)/2)}.plan-grid{grid-template-columns:1fr}.plan-card.featured{transform:none}.case-metrics{grid-template-columns:repeat(2,1fr)}
+ .faq-grid{grid-template-columns:1fr;gap:20px}.review-card{flex-basis:calc((100% - 22px)/2)}.plan-grid{grid-template-columns:1fr}.plan-card.featured{transform:none}.case-metrics{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:520px){
  header{height:65px}.brand-mark{width:36px;height:36px}.brand-name{font-size:14px}
@@ -302,18 +302,18 @@ document.querySelectorAll('.faq-question').forEach(button=>{
 });
 // Prévia do carrossel com os textos recebidos por print. Confirmar autenticidade e autorização antes da publicação.
 const realReviews = [
- {business:'Hot dog — Goiás (GO)', text:'O diferencial da Delivery Dominante está na atenção aos detalhes. O trabalho vai além do cardápio, envolvendo estratégia, posicionamento e análise das oportunidades de venda.', name:'Responsável: confirmar nome do cliente', image:'hot-dog.png'},
- {business:'Frango frito — Bahia (BA)', text:'A consultoria da Delivery Dominante considera a realidade da operação e trabalha pontos importantes, como cardápio, promoções e oportunidades dentro do iFood.', name:'Responsável: confirmar nome do cliente', image:'frango-no-balde.jpg'},
- {business:'Marmitaria fit — Santa Catarina (SC)', text:'O Matheus procura entender os desafios da loja antes de direcionar as ações. As orientações são voltadas para nossa realidade, sem depender de soluções genéricas.', name:'Responsável: confirmar nome do cliente', image:'marmita-fit.jpg'},
- {business:'Marmitaria — Pernambuco (PE)', text:'A Delivery Dominante trouxe uma perspectiva mais estratégica para a gestão do delivery. O acompanhamento dos indicadores ajuda a organizar o planejamento e identificar oportunidades comerciais.', name:'Responsável: confirmar nome do cliente', image:'marmita-tradicional.jpg'},
- {business:'Marmitaria — Rio Grande do Sul (RS)', text:'A proposta da Delivery Dominante é unir estratégia e acompanhamento. O trabalho busca melhorar a análise dos indicadores e ajudar a tomar decisões mais inteligentes para o negócio.', name:'Responsável: confirmar nome do cliente', image:'marmita-tradicional.jpg'},
- {business:'Dogueria — Goiás (GO)', text:'O Matheus demonstra dedicação em entender a operação, analisar os indicadores e buscar melhorias que façam sentido para a realidade da loja. Esse cuidado faz diferença no planejamento.', name:'Responsável: confirmar nome do cliente', image:'hot-dog.png'},
- {business:'Pizzaria — Distrito Federal (DF)', text:'A Delivery Dominante trabalha com foco na organização e no desenvolvimento da operação. As orientações sobre cardápio, promoções e desempenho ajudam a direcionar as decisões.', name:'Responsável: confirmar nome do cliente', image:'pizza-premium.jpg'},
- {business:'Pizzaria — Minas Gerais (MG)', text:'A Delivery Dominante demonstra profissionalismo e comprometimento. O acompanhamento é direcionado e as orientações ajudam a enxergar a loja de forma mais estratégica.', name:'Responsável: confirmar nome do cliente', image:'pizza-premium.jpg'},
- {business:'Hamburgueria — Espírito Santo (ES)', text:'O que chama a atenção no trabalho do Matheus é a dedicação. Ele busca entender os números e identificar pontos de melhoria, trabalhando com estratégia e acompanhamento.', name:'Responsável: confirmar nome do cliente', image:'burguer-artesanal.jpg'},
- {business:'Hamburgueria — São Paulo (SP)', text:'O Matheus é muito dedicado e acompanha de perto cada detalhe da operação. O trabalho é estratégico, com atenção aos números e foco em encontrar oportunidades de crescimento no iFood.', name:'Responsável: confirmar nome do cliente', image:'burguer-artesanal.jpg'},
- {business:'Açaí 1 — Rio de Janeiro (RJ)', text:'O Matheus procura entender as necessidades da loja e direcionar as estratégias conforme nossos objetivos. É importante contar com alguém que acompanha a operação com visão de crescimento.', name:'Responsável: confirmar nome do cliente', image:'acai.jpg'},
- {business:'Açaí 2 — Minas Gerais (MG)', text:'O Matheus se destaca pela atenção dedicada ao acompanhamento da loja. Existe preocupação em analisar o cenário e buscar caminhos para melhorar o desempenho no aplicativo.', name:'Responsável: confirmar nome do cliente', image:'acai.jpg'}
+ {business:'Hot dog — Goiás (GO)', text:'O diferencial da Delivery Dominante está na atenção aos detalhes. O trabalho vai além do cardápio, envolvendo estratégia, posicionamento e análise das oportunidades de venda.', name:'Responsável: confirmar nome do cliente', image:'hot_dog_sem_texto(1).png'},
+ {business:'Frango frito — Bahia (BA)', text:'A consultoria da Delivery Dominante considera a realidade da operação e trabalha pontos importantes, como cardápio, promoções e oportunidades dentro do iFood.', name:'Responsável: confirmar nome do cliente', image:'FRANGO FRITO.webp'},
+ {business:'Marmitaria fit — Santa Catarina (SC)', text:'O Matheus procura entender os desafios da loja antes de direcionar as ações. As orientações são voltadas para nossa realidade, sem depender de soluções genéricas.', name:'Responsável: confirmar nome do cliente', image:'MARMITA FIT(2).jpg'},
+ {business:'Marmitaria — Pernambuco (PE)', text:'A Delivery Dominante trouxe uma perspectiva mais estratégica para a gestão do delivery. O acompanhamento dos indicadores ajuda a organizar o planejamento e identificar oportunidades comerciais.', name:'Responsável: confirmar nome do cliente', image:'MARMITA 22.jpg'},
+ {business:'Marmitaria — Rio Grande do Sul (RS)', text:'A proposta da Delivery Dominante é unir estratégia e acompanhamento. O trabalho busca melhorar a análise dos indicadores e ajudar a tomar decisões mais inteligentes para o negócio.', name:'Responsável: confirmar nome do cliente', image:'LASANHA.jpg'},
+ {business:'Dogueria — Goiás (GO)', text:'O Matheus demonstra dedicação em entender a operação, analisar os indicadores e buscar melhorias que façam sentido para a realidade da loja. Esse cuidado faz diferença no planejamento.', name:'Responsável: confirmar nome do cliente', image:'DOGUERIA.jpg'},
+ {business:'Pizzaria — Distrito Federal (DF)', text:'A Delivery Dominante trabalha com foco na organização e no desenvolvimento da operação. As orientações sobre cardápio, promoções e desempenho ajudam a direcionar as decisões.', name:'Responsável: confirmar nome do cliente', image:'PIZZARIA.jpg'},
+ {business:'Pizzaria — Minas Gerais (MG)', text:'A Delivery Dominante demonstra profissionalismo e comprometimento. O acompanhamento é direcionado e as orientações ajudam a enxergar a loja de forma mais estratégica.', name:'Responsável: confirmar nome do cliente', image:'PIZZARIAAA.webp'},
+ {business:'Hamburgueria — Espírito Santo (ES)', text:'O que chama a atenção no trabalho do Matheus é a dedicação. Ele busca entender os números e identificar pontos de melhoria, trabalhando com estratégia e acompanhamento.', name:'Responsável: confirmar nome do cliente', image:'HAMBURGUERIA.webp'},
+ {business:'Hamburgueria — São Paulo (SP)', text:'O Matheus é muito dedicado e acompanha de perto cada detalhe da operação. O trabalho é estratégico, com atenção aos números e foco em encontrar oportunidades de crescimento no iFood.', name:'Responsável: confirmar nome do cliente', image:'HAMBÚRGUER.jpg'},
+ {business:'Açaí 1 — Rio de Janeiro (RJ)', text:'O Matheus procura entender as necessidades da loja e direcionar as estratégias conforme nossos objetivos. É importante contar com alguém que acompanha a operação com visão de crescimento.', name:'Responsável: confirmar nome do cliente', image:'BARCA DE AÇAI.webp'},
+ {business:'Açaí 2 — Minas Gerais (MG)', text:'O Matheus se destaca pela atenção dedicada ao acompanhamento da loja. Existe preocupação em analisar o cenário e buscar caminhos para melhorar o desempenho no aplicativo.', name:'Responsável: confirmar nome do cliente', image:'AÇAÍ1.jpg'}
 ];
 const reviewSection = document.getElementById('depoimentos');
 const track = document.getElementById('reviewTrack');
@@ -328,7 +328,7 @@ realReviews.forEach(review=>{
 });
 let index=0;
 const visible=()=>window.innerWidth<=520?1:(window.innerWidth<=850?2:3);
-const move=()=>{const card=track.querySelector('.review-card');if(!card)return;const gap=16;const max=Math.max(0,realReviews.length-visible());index=Math.min(index,max);track.style.transform=`translateX(-${index*(card.getBoundingClientRect().width+gap)}px)`;};
+const move=()=>{const card=track.querySelector('.review-card');if(!card)return;const gap=22;const max=Math.max(0,realReviews.length-visible());index=Math.min(index,max);track.style.transform=`translateX(-${index*(card.getBoundingClientRect().width+gap)}px)`;};
 const next=()=>{index++;if(index>Math.max(0,realReviews.length-visible()))index=0;move();};
 document.getElementById('reviewNext').addEventListener('click',next);
 document.getElementById('reviewPrev').addEventListener('click',()=>{index--;if(index<0)index=Math.max(0,realReviews.length-visible());move();});
