@@ -90,6 +90,27 @@
     .float-whatsapp{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:#20bf64;color:#fff;display:grid;place-items:center;z-index:50;box-shadow:0 7px 22px rgba(0,0,0,.2)}
     .float-whatsapp svg{width:29px;height:29px;fill:currentColor}
 
+
+    .faq{background:var(--soft)}
+    .faq-list{max-width:850px;margin:0 auto;display:grid;gap:12px}
+    .faq-item{background:#fff;border:1px solid var(--line);border-radius:12px;padding:0 20px}
+    .faq-item summary{cursor:pointer;list-style:none;padding:19px 30px 19px 0;font-weight:800;font-size:14px;position:relative}
+    .faq-item summary::-webkit-details-marker{display:none}
+    .faq-item summary:after{content:"+";position:absolute;right:0;top:14px;font-size:24px;color:var(--red)}
+    .faq-item[open] summary:after{content:"−"}
+    .faq-item p{font-size:13px;color:var(--muted);padding:0 0 20px}
+    .contact{background:#fff}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+    .contact-panel{background:var(--ink);color:#fff;padding:30px;border-radius:16px}
+    .contact-panel p{color:#d0d4dc;font-size:14px;margin:12px 0 22px}
+    .contact-links{display:grid;gap:12px}
+    .contact-link{padding:14px 16px;border:1px solid rgba(255,255,255,.18);border-radius:10px;font-size:13px;font-weight:700;overflow-wrap:anywhere}
+    .contact-link:hover{border-color:#ed171f}
+    .contact-note{border:1px solid var(--line);border-radius:16px;padding:30px;display:flex;flex-direction:column;justify-content:center}
+    .contact-note h3{font-size:22px;margin-bottom:12px}
+    .contact-note p{font-size:14px;color:var(--muted);margin-bottom:18px}
+    @media(max-width:650px){.contact-grid{grid-template-columns:1fr}.contact-panel,.contact-note{padding:23px}}
+
     .plans{background:var(--soft)}
     .plans-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
     .plan-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px;display:flex;flex-direction:column;position:relative}
@@ -126,7 +147,7 @@
       <span class="brand-name">DELIVERY DOMINANTE<small>ESTRATÉGIA • GESTÃO • RESULTADO</small></span>
     </a>
     <nav class="links" aria-label="Navegação principal">
-      <a href="#servicos">SERVIÇOS</a><a href="#nichos">SEGMENTOS</a><a href="#case">CASE REAL</a><a href="#planos">PLANOS</a><a href="#processo">COMO FUNCIONA</a>
+      <a href="#servicos">SERVIÇOS</a><a href="#nichos">SEGMENTOS</a><a href="#case">CASE REAL</a><a href="#planos">PLANOS</a><a href="#processo">COMO FUNCIONA</a><a href="#faq">DÚVIDAS</a>
     </nav>
     <a class="btn" href="https://wa.me/5531990033819?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20a%20consultoria." target="_blank" rel="noopener">FALAR COM ESPECIALISTA</a>
   </div>
@@ -257,6 +278,49 @@
         <article class="step"><div class="step-num">01</div><h3>Diagnóstico</h3><p>Analisamos a loja, o cardápio, os indicadores e as principais oportunidades de melhoria.</p></article>
         <article class="step"><div class="step-num">02</div><h3>Plano estratégico</h3><p>Definimos prioridades e ações compatíveis com o momento e os objetivos do seu negócio.</p></article>
         <article class="step"><div class="step-num">03</div><h3>Acompanhamento</h3><p>Avaliamos a evolução e ajustamos as estratégias com base nos dados e na rotina da operação.</p></article>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Perguntas frequentes</div>
+        <h2>ANTES DE <span>COMEÇAR.</span></h2>
+        <p>Entenda como funciona a consultoria e converse conosco para avaliar o melhor caminho para sua operação.</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item"><summary>Para quais tipos de delivery é a consultoria?</summary><p>Atendemos diferentes segmentos de alimentação, como hamburguerias, pizzarias, marmitarias, açaíterias, operações de frango, hot dog, comida fit, sushi e poke.</p></details>
+        <details class="faq-item"><summary>A consultoria garante aumento nas vendas?</summary><p>Não é possível garantir um resultado específico. O trabalho é orientado por diagnóstico, estratégia e acompanhamento, e os resultados dependem também da operação, do mercado e da execução das ações.</p></details>
+        <details class="faq-item"><summary>Como escolho o plano ideal?</summary><p>Entre em contato para conversarmos sobre o momento da sua operação, seus objetivos e as condições de cada plano antes de decidir.</p></details>
+        <details class="faq-item"><summary>O atendimento é feito pelo WhatsApp?</summary><p>Você pode iniciar o contato pelo WhatsApp. Por lá, alinhamos as informações iniciais e os próximos passos.</p></details>
+        <details class="faq-item"><summary>É possível pagar parcelado?</summary><p>Sim. As condições de parcelamento estão descritas na seção de planos. A condição final é confirmada no atendimento antes da contratação.</p></details>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contato">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Vamos conversar</div>
+        <h2>SEU PRÓXIMO PASSO <span>COMEÇA AQUI.</span></h2>
+        <p>Fale com a Delivery Dominante e explique o que você deseja melhorar na sua operação.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-panel">
+          <h3>Entre em contato</h3>
+          <p>Escolha o canal mais conveniente. Vamos entender o seu cenário e orientar os próximos passos.</p>
+          <div class="contact-links">
+            <a class="contact-link" href="https://wa.me/5531990033819?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Delivery%20Dominante." target="_blank" rel="noopener">WhatsApp · (31) 99003-3819</a>
+            <a class="contact-link" href="https://www.instagram.com/delivery_dominante_/" target="_blank" rel="noopener">Instagram · @DELIVERY_DOMINANTE_</a>
+            <a class="contact-link" href="mailto:deliverydominante@gmail.com">E-mail · deliverydominante@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-note">
+          <h3>Estratégia feita para a realidade do seu negócio.</h3>
+          <p>Não existe uma fórmula única para todo delivery. O primeiro passo é entender os indicadores, identificar prioridades e montar um plano de ação coerente com a sua operação.</p>
+          <div class="actions"><a class="btn" href="https://wa.me/5531990033819?text=Ol%C3%A1%2C%20quero%20avaliar%20meu%20delivery." target="_blank" rel="noopener">AVALIAR MEU DELIVERY</a><a class="btn btn-light" href="#planos">VER PLANOS</a></div>
+        </div>
       </div>
     </div>
   </section>
