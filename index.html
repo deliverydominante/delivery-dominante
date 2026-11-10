@@ -151,6 +151,18 @@ footer .links{flex-wrap:wrap}
  body{padding-bottom:65px}footer{padding-bottom:36px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.review-track{transition:none}*{animation:none!important;transition:none!important}}
+
+/* CTA de análise gratuita — identidade Delivery Dominante */
+.free-analysis{background:#090a0c;color:#fff;padding:30px 0}
+.free-analysis-box{display:flex;align-items:center;justify-content:center;gap:24px;border:2px solid var(--red);border-radius:18px;padding:24px 28px;background:linear-gradient(110deg,#08090b,#17191e);box-shadow:0 0 22px #ed171f25}
+.free-analysis-icon{width:76px;height:76px;flex:0 0 76px;color:#fff}
+.free-analysis-divider{width:2px;height:76px;background:#fff;opacity:.8}
+.free-analysis-copy{font-size:clamp(20px,3vw,32px);font-weight:800;line-height:1.15}
+.free-analysis-copy strong{display:block;color:#fff;background:var(--red);padding:5px 12px;border-radius:8px;width:max-content;max-width:100%;margin:5px 0}
+.free-analysis-copy span{display:block;font-size:.78em}
+.free-analysis .btn{background:var(--green);border-color:var(--green);white-space:nowrap;font-size:14px;padding:16px 22px}
+@media(max-width:650px){.free-analysis-box{flex-wrap:wrap;gap:14px;padding:20px}.free-analysis-icon{width:54px;height:54px;flex-basis:54px}.free-analysis-divider{height:54px}.free-analysis-copy{font-size:21px;flex:1}.free-analysis .btn{width:100%}}
+
 </style>
 </head>
 <body>
@@ -217,6 +229,19 @@ footer .links{flex-wrap:wrap}
   <div class="case-panel" style="padding:0;overflow:hidden;background:#fff;">
    <img src="dashboard-vendas-hamburgueria-pizzaria (1).png" alt="Resultados dos últimos 90 dias para hamburgueria e pizzaria: vendas, faturamento, ticket médio com aumento de 2,94% e novos clientes" style="display:block;width:100%;height:auto;border-radius:16px;">
    <p class="case-note" style="padding:12px 18px;">Resultados de uma operação específica. O desempenho varia conforme cada negócio.</p>
+  </div>
+ </div>
+</section>
+
+<section class="free-analysis" id="analise-gratuita">
+ <div class="container">
+  <div class="free-analysis-box">
+   <svg class="free-analysis-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <rect x="12" y="9" width="34" height="46" rx="5"/><path d="M22 9V6h14v3M20 23h18M20 31h12M20 39h8"/><circle cx="43" cy="43" r="11"/><path d="m51 51 7 7M39 47v-5M43 47v-9M47 47v-7"/>
+   </svg>
+   <div class="free-analysis-divider" aria-hidden="true"></div>
+   <div class="free-analysis-copy">Solicite uma<strong>ANÁLISE GRATUITA</strong><span>do seu delivery!</span></div>
+   <a class="btn" href="https://wa.me/5531990033819?text=Ol%C3%A1%2C%20quero%20solicitar%20uma%20an%C3%A1lise%20gratuita%20do%20meu%20delivery." target="_blank" rel="noopener">Chamar no WhatsApp ↗</a>
   </div>
  </div>
 </section>
